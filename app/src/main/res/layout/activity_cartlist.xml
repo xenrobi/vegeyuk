@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+
+    <include layout="@layout/toolbar_cart"
+        android:id="@+id/toolbar"/>
+
+    <include layout="@layout/messages"
+        android:id="@id/error"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/scCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@id/toolbar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.vegeyuk.marketresto.utils.NonScrollListView
+
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00000000"
+                android:background="#f8f8f8"
+                />
+
+            <include layout="@layout/bag_total"
+                android:id="@+id/bag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listview" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

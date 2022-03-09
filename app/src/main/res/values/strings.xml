@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Market Resto</string>
+    <string name="lostconnection">Gagal terhubung ke server</string>
+    <string name="memuat">Memuat...</string>
+    <string name="cari">Cari...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quantity">Quantity</string>
+    <string name="total">Total</string>
+    <string name="add_to_cart">Tambahkan</string>
+    <string name="update">Update</string>
+    <string name="totalpayable">Total</string>
+    <string name="totalpayableamount">Rp. 50.000</string>
+    <string name="error">Terjadi kesalahan, Kami Akan Segera Meperbaikinya</string>
+    <string name="msg">Mohon Diterima Semua Permision</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="path">https://topapp.id/marketresto/public/fotomenu/</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="path_restoran">https://topapp.id/marketresto/public/fotorestoran/</string>
+    <string name="title_activity_maps_delivery">Map</string>
+
+
+</resources>

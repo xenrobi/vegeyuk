@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "388462316515",
+    "firebase_url": "https://marketresto-213709.firebaseio.com",
+    "project_id": "marketresto-213709",
+    "storage_bucket": "marketresto-213709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388462316515:android:6d0610d6888d28ed",
+        "android_client_info": {
+          "package_name": "com.example.abdialam.marketresto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388462316515-hokr8bnpgcrgo93iigc5h3fbl1aumm5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abdialam.marketresto",
+            "certificate_hash": "28bf8b3390a5b123bfa10a1f6a660000ec7d0942"
+          }
+        },
+        {
+          "client_id": "388462316515-oiu9r26ina4l9sqs558t07kci4al1e1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9OslyUng2cqAE2H5HdCInjzlJ0J4Ahs0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388462316515-oiu9r26ina4l9sqs558t07kci4al1e1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

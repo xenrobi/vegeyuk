@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonDialogMargin">6dp</dimen>
+    <dimen name="buttomDialogPadding">20dp</dimen>
+    <dimen name="titleDialogPadding">10dp</dimen>
+    <dimen name="textTitleStyle">24sp</dimen>
+    <dimen name="layoutDialogMargin">10dp</dimen>
+    <dimen name="textSubtitleStyle">18sp</dimen>
+    <dimen name="buttonCloseDialogMargin">40dp</dimen>
+    <dimen name="text">15dp</dimen>
+    <dimen name="textsub">14dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

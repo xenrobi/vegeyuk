@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--soal 1-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="1. Apakah proses pemesanan mudah dipahami ?"
+                android:textColor="@color/Tex"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/soal1">
+
+
+                <RadioButton
+                    android:text="Sangat Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soal1A"
+                    />
+
+                <RadioButton
+                    android:text="Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal1B"/>
+
+                <RadioButton
+                    android:id="@+id/soal1C"
+                    android:text="Netral"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <RadioButton
+                    android:text="Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal1D"/>
+
+                <RadioButton
+                    android:text="Sangat Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal1E"/>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--soal 1-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <!--soal 1-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="2. Apakah aplikasi membantu  dalam menjelaskan lokasi pengantaran ? "
+                android:textColor="@color/Tex"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/soal2">
+
+
+                <RadioButton
+                    android:text="Sangat Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soal2A"
+                    />
+
+                <RadioButton
+                    android:text="Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal2B"/>
+
+                <RadioButton
+                    android:id="@+id/soal2C"
+                    android:text="Netral"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <RadioButton
+                    android:text="Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal2D"/>
+
+                <RadioButton
+                    android:text="Sangat Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal2E"/>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <!--soal 3 -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="3. Apakah aplikasi membantu dalam mencari tempat makan/menu makanan ? "
+                android:textColor="@color/Tex"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/soal3">
+
+
+                <RadioButton
+                    android:text="Sangat Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soal3A"
+                   />
+
+                <RadioButton
+                    android:text="Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal3B"/>
+
+                <RadioButton
+                    android:id="@+id/soal3C"
+                    android:text="Netral"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <RadioButton
+                    android:text="Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal3D"/>
+
+                <RadioButton
+                    android:text="Sangat Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal3E"/>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <!--Soal 4 -->
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="4. Apakah tampilan dari aplikasi ini mudah dipahami ? "
+                android:textColor="@color/Tex"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/soal4">
+
+
+                <RadioButton
+                    android:text="Sangat Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soal4A"/>
+
+                <RadioButton
+                    android:text="Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal4B"/>
+
+                <RadioButton
+                    android:id="@+id/soal4C"
+                    android:text="Netral"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <RadioButton
+                    android:text="Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal4D"/>
+
+                <RadioButton
+                    android:text="Sangat Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal4E"/>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <!--Soal 5 -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="5. Apakah sistem market resto ini mempermudah dalam jual beli makanan ?"
+                android:textColor="@color/Tex"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/soal5">
+
+
+                <RadioButton
+                    android:text="Sangat Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soal5A"
+                    />
+
+                <RadioButton
+                    android:text="Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal5B"/>
+
+                <RadioButton
+                    android:id="@+id/soal5C"
+                    android:text="Netral"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <RadioButton
+                    android:text="Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal5D"/>
+
+                <RadioButton
+                    android:text="Sangat Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal5E"/>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <!--soal 6 -->
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rect"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+
+            <!--soal 1-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="6. Apakah sistem market resto ini sudah cukup baik ? "
+                android:textColor="@color/Tex"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/soal6">
+
+
+                <RadioButton
+                    android:text="Sangat Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soal6A"
+                    />
+
+                <RadioButton
+                    android:text="Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal6B"/>
+
+                <RadioButton
+                    android:id="@+id/soal6C"
+                    android:text="Netral"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp" />
+
+                <RadioButton
+                    android:text="Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal6D"/>
+
+                <RadioButton
+                    android:text="Sangat Tidak Setuju"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/soal6E"/>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rect"
+        android:orientation="vertical"
+
+        >
+
+        <customfonts.MyTextView
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="#0000"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Kirim"
+            android:textColor="@color/Tex"
+            android:textSize="@dimen/text" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

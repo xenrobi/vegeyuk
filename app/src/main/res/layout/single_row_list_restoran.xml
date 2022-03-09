@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="1dp"
+    android:orientation="vertical"
+    android:background="@drawable/rect"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginHorizontal="1dp"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/imageRestoran"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            app:srcCompat="@android:drawable/ic_menu_report_image"
+            android:layout_margin="5dp"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingRight="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+
+                    <customfonts.MyTextView
+                        android:id="@+id/tvNamaResto"
+                        android:maxLines="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Martabak Pisang"
+                        android:textSize="@dimen/text"
+                        android:textColor="@color/red"
+                        android:textAllCaps="true"/>
+
+                </HorizontalScrollView>
+
+                <customfonts.MyTextView
+                    android:id="@+id/tvOprasional"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corner_green"
+                    android:text="Buka"/>
+
+            </LinearLayout>
+
+            <!--########################Midle Info###################-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <customfonts.MyTextView
+                    android:id="@+id/tvDeskripsi_resto"
+                    android:maxLines="2"
+                    android:textSize="@dimen/textsub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menjual Masakan Padang"
+                    android:layout_gravity="center"
+                    android:textColor="@color/Tex"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <customfonts.MyTextView
+                    android:id="@+id/tvJumlah_pesan"
+                    android:textSize="@dimen/textsub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500 Pesanan"
+                    android:layout_gravity="center"
+                    android:textColor="@color/textSub"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--#######################Footer info############################-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imJarak"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:src="@drawable/ic_location_on"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <customfonts.MyTextView
+                        android:id="@+id/tvJarak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="10 Km"
+                        android:maxLines="1"
+                        android:textColor="@color/Tex"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/min"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:src="@drawable/ic_delivery"
+                        android:gravity="center"
+                        android:layout_gravity="center"/>
+
+                    <customfonts.MyTextView
+                        android:id="@+id/tvTarif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="01"
+                        android:textColor="@color/Tex"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/plus"
+                        android:layout_width="25dp"
+                        android:layout_height="21dp"
+                        android:text="min "
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/tvMin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="01"
+                        android:maxLines="1"
+                        android:textColor="@color/textSub"
+                        android:textSize="@dimen/textsub" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

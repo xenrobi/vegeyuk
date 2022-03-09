@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CartListActivity"
+    android:background="#f8f8f8">
+
+<LinearLayout
+
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rect"
+    android:layout_margin="16dp"
+    >
+
+    <!--******bag subtotal********-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/bagtotal"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sub Total"
+            android:textColor="@color/textSub"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/tvSubTotal"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1600 Rs"
+            android:textColor="@color/Tex"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colordevider"/>
+
+
+    <!--******biaya antar********-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/delivery"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biaya Antar"
+            android:textColor="@color/textSub"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/tvBiayaAntar"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gratis"
+            android:textColor="@color/green"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/viewpb1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colordevider"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/lyt_pb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/pajak_pb1"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PB1 (10%)"
+            android:textColor="@color/textSub"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/tvPajakPB1"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp. 10.000"
+            android:textColor="@color/Tex"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colordevider"/>
+
+
+
+
+
+    <!--****** total********-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/totalpayable"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/totalpayable"
+            android:textColor="@color/textSub"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="left"
+            />
+
+
+        <customfonts.MyTextView
+            android:layout_weight="1"
+            android:id="@+id/tvTotal"
+            android:textSize="@dimen/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/totalpayableamount"
+            android:textColor="@color/Tex"
+            android:background="#0000"
+            android:padding="16dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+
+    <!--Bag Konsumen-->
+    <LinearLayout
+
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rect"
+        android:layout_margin="16dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/tvNamaKonsumen"
+                android:textSize="@dimen/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muhammad Aufa"
+                android:textColor="@color/textSub"
+                android:background="#0000"
+
+                android:gravity="center_vertical"
+                />
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/tvPhoneKonsumen"
+                android:textSize="@dimen/textsub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+6281268475430"
+                android:textColor="@color/Tex"
+                android:background="#0000"
+
+                android:gravity="left"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/bagtotal1"
+                android:textSize="@dimen/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:gravity="left"
+                android:textColor="@color/textSub"
+                android:background="#0000"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+
+
+
+                />
+
+        </LinearLayout>
+
+
+
+        <!--******sub total********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <customfonts.MyTextView
+                android:id="@+id/tvAlamatAntar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:gravity="left"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="Jl. Garuda Sakti KM 10"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+        <!--****** total********-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            >
+
+
+            <customfonts.MyEditText
+                android:id="@+id/etCatatanAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text"
+                android:visibility="gone"
+                android:hint="Catatan Untuk Penjual"
+
+                />
+
+            <TextView
+                android:id="@+id/btnCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="+ Catatan untuk Penjual atau kurir"
+                android:visibility="visible"
+                android:drawableRight="@drawable/ic_edit"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rgMetodeBayar"
+        android:layout_below="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:layout_margin="16dp">
+
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bayar Di Tempat"
+            android:layout_margin="16dp"
+            android:drawableRight="@drawable/ic_motor"
+            android:checked="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+
+
+        <RadioButton
+            android:id="@+id/rbRestoPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Resto - Pay "
+            android:drawableRight="@drawable/ic_resto_pay"
+            />
+
+
+
+            <TextView
+                android:id="@+id/tvSaldo"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Saldo Anda Rp5000 Mencukupi"
+                android:textColor="@color/textSub"
+                android:textSize="12sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_below="@+id/rgMetodeBayar"
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <!--<customfonts.MyTextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="PESAN SEKARANG"-->
+            <!--android:textColor="@color/White"-->
+            <!--android:textSize="@dimen/text"-->
+            <!--android:background="@drawable/oneside_roundrect"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingRight="25dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="right"-->
+            <!--/>-->
+
+        <customfonts.MyTextView
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="PESAN SEKARANG"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:drawableTint="#ffffff"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

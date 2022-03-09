@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_cart"></include>
+
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sukses Melakukan Pesanan"
+            android:textSize="21dp"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            />
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Pesanan: #2343343"
+            android:textSize="@dimen/text"
+            android:textColor="@color/textSub"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            />
+
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scheduled Arrivel Date"
+            android:textSize="16dp"
+            android:textColor="@color/Tex"
+            android:gravity="center"
+            android:layout_marginTop="46dp"
+            />
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunday, April 27 "
+            android:textSize="@dimen/text"
+            android:textColor="@color/textSub"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <LinearLayout
+            android:layout_below="@+id/linear3"
+            android:id="@+id/SHOPPING"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect1"
+            android:padding="12dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="36dp"
+            >
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE SHOPPING"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="@dimen/text"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

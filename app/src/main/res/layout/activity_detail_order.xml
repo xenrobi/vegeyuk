@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8">
+
+        <LinearLayout
+            android:id="@+id/layoutStatus"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect"
+            android:padding="16dp"
+            android:visibility="visible"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp">
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Pesanan"
+                android:textSize="12sp"
+                android:textColor="@color/textSub"
+                />
+
+            <customfonts.MyTextView
+                android:id="@+id/tvStatusSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selesai"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/Tex"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_selesai" />
+
+            <customfonts.MyTextView
+                android:id="@+id/tvStatusProses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proses"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/Tex"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_proses" />
+
+            <customfonts.MyTextView
+                android:id="@+id/tvStatusPengantaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengantaran"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/Tex"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_pengantaran" />
+
+            <customfonts.MyTextView
+                android:id="@+id/tvStatusBatal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/Tex"
+                android:textSize="12dp"
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_batal" />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <!--Bag Alamat-->
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect"
+            android:layout_below="@+id/layoutStatus"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    >
+
+
+                    <customfonts.MyTextView
+                        android:id="@+id/tvNamaKonsumen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="center_vertical"
+                        android:text="Nama User"
+                        android:textColor="@color/colorPrimary"
+
+                        android:textSize="@dimen/text" />
+
+
+                    <customfonts.MyTextView
+                        android:layout_weight="1"
+                        android:id="@+id/tvPhoneKonsumen"
+                        android:textSize="@dimen/textsub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+6281268475430"
+                        android:textColor="@color/Tex"
+                        android:background="#0000"
+
+                        android:gravity="left"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                >
+
+
+                <customfonts.MyTextView
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:gravity="left"
+                    android:textColor="@color/textSub"
+                    android:background="#0000"/>
+
+                <customfonts.MyTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvAlamatAntar"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Garuda Sakti KM 10"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"/>
+
+            <!--****** total********-->
+            <LinearLayout
+                android:id="@+id/layoutCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <customfonts.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Catatan"
+                    android:textColor="@color/textSub"
+                    android:textSize="@dimen/text"/>
+
+                <customfonts.MyTextView
+                    android:layout_weight="1"
+                    android:id="@+id/catatan"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.example.vegeyuk.marketresto.utils.NonScrollListView
+            android:id="@+id/listview"
+            android:layout_below="@id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#00000000"
+            android:footerDividersEnabled="true"
+            />
+
+
+
+
+        <LinearLayout
+
+            android:id="@+id/linear3"
+            android:layout_below="@id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect"
+            android:layout_margin="16dp"
+            >
+
+            <!--******bag subtotal********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/bagtotal"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total"
+                    android:textColor="@color/textSub"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvSubTotal"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1600 Rs"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"/>
+
+
+            <!--******sub total********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/delivery"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya Antar"
+                    android:textColor="@color/textSub"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvBiayaAntar"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gratis"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewpb1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_pb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+
+                <customfonts.MyTextView
+                    android:layout_weight="1"
+                    android:id="@+id/pajak_pb1"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PB1 (10%)"
+                    android:textColor="@color/textSub"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+
+                <customfonts.MyTextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvPajakPB1"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 10.000"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"/>
+
+            <!--****** total********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/totalpayable"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Total"
+                    android:textColor="@color/textSub"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvTotal"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.5000"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colordevider"/>
+
+            <!--****** total********-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Metode Bayar"
+                    android:textColor="@color/textSub"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="left"
+                    />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tvMetodeBayar"
+                    android:textSize="@dimen/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Metode Bayar"
+                    android:textColor="@color/Tex"
+                    android:background="#0000"
+                    android:padding="16dp"
+                    android:gravity="right"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/btnInvoice"
+            android:layout_below="@id/linear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Kirim Invoice"
+           android:layout_marginVertical="30dp"
+            android:drawableRight="@drawable/ic_download"
+            android:layout_marginHorizontal="16dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/judul"
+        android:background="@drawable/logo"/>
+
+        <customfonts.MyTextView
+            android:id="@+id/judul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Market Resto"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/Tex"
+            android:textSize="25sp"
+            android:layout_above="@+id/a"
+            android:layout_centerHorizontal="true"/>
+
+        <customfonts.MyTextView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masukkan nomor ponsel anda"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_above="@+id/editTextPhone"/>
+
+
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="phone"
+        android:layout_centerInParent="true"
+        android:typeface="monospace"
+        mask:allowed_chars="1234567890"
+        mask:mask="+62-####-###-####"
+        app:keep_hint="true" />
+
+    <Button
+        android:id="@+id/buttonGetVerificationCode"
+        android:layout_width="match_parent"
+        android:text="Masuk"
+        android:layout_height="60dp"
+        android:textColor="@color/White"
+        android:textAllCaps="false"
+        android:theme="@style/ButtonPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/editTextPhone"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun ? "/>
+
+        <customfonts.MyTextView
+            android:id="@+id/textSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SuccessOrder"
+    android:background="#fff"
+    >
+
+
+        <!--<include-->
+            <!--layout="@layout/toolbar_cart"></include>-->
+
+
+        <customfonts.MyTextView
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesanan Berhasil"
+            android:textSize="21dp"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:layout_marginTop="36dp"
+            />
+
+        <customfonts.MyTextView
+            android:layout_below="@id/title"
+            android:id="@+id/idorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order number: #2343343"
+            android:textSize="@dimen/text"
+            android:textColor="@color/textSub"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_msg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fastdelivery"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            />
+
+
+        <customfonts.MyTextView
+            android:id="@+id/msg"
+            android:layout_below="@+id/img_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimasi Waktu Sampai"
+            android:textSize="16dp"
+            android:textColor="@color/Tex"
+            android:gravity="center"
+            android:layout_marginTop="46dp"
+            />
+
+        <customfonts.MyTextView
+            android:layout_below="@+id/msg"
+            android:id="@+id/tvWaktuSampai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tunggu konfirmasi dari restoran anda"
+            android:textSize="@dimen/text"
+            android:textColor="@color/textSub"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <LinearLayout
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/SHOPPING"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rect1"
+            android:padding="12dp"
+            android:layout_marginBottom="36dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="36dp"
+            >
+
+            <customfonts.MyTextView
+                android:id="@+id/btnSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LANJUTKAN BELANJA"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="@dimen/text"
+                />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

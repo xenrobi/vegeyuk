@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_msg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/msg_not_found"
+       android:layout_above="@id/title_msg"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"/>
+
+    <customfonts.MyTextView
+        android:id="@+id/title_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tidak Ditemukan di Sekitar Anda"
+        android:gravity="center"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+        android:layout_marginHorizontal="16dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <customfonts.MyTextView
+        android:id="@+id/sub_title_msg"
+        android:layout_below="@id/title_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:text=""/>
+
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_below="@id/sub_title_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Ganti Lokasi"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttom_outline"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

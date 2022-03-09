@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="2dp"
+    android:orientation="vertical"
+    android:background="@drawable/rect"
+    card_view:cardUseCompatPadding="true"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        >
+
+        <!--<ImageView-->
+            <!--android:id="@+id/image"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:gravity="center"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_gravity="center"-->
+            <!--app:srcCompat="@android:drawable/ic_menu_report_image"-->
+
+            <!--/>-->
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp">
+
+                <customfonts.MyTextView
+
+                    android:id="@+id/tvNoOrder"
+                    android:maxLines="1"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order : 53277364357"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/red"
+                    />
+
+                <customfonts.MyTextView
+                    android:layout_weight="2"
+                    android:id="@+id/tvWaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:textSize="12dp"
+                    android:maxLines="1"
+                    android:text="Proses"/>
+
+            </LinearLayout>
+
+            <!--########################Midle Info###################-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp">
+
+                <customfonts.MyTextView
+
+                    android:id="@+id/tvNamaResto"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pak Nurddin"
+                    android:textSize="@dimen/text"
+                    android:textColor="@color/red"
+                    />
+
+                <customfonts.MyTextView
+                    android:id="@+id/tvStatus"
+                    android:textSize="@dimen/textsub"
+                    android:maxLines="1"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengantaran"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:textColor="@color/textSub"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+
+                <customfonts.MyTextView
+                    android:layout_gravity="center"
+                    android:id="@+id/tvTotal"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:text="Rp5000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/opendelivery"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_motor_red"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
