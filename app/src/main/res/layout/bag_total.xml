@@ -344,23 +344,6 @@
 
 
         <RadioButton
-            android:id="@+id/rbCash"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bayar Di Tempat"
-            android:layout_margin="16dp"
-            android:drawableRight="@drawable/ic_motor"
-            android:checked="true"
-            />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colordevider"/>
-
-
-
-        <RadioButton
             android:id="@+id/rbRestoPay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -372,17 +355,37 @@
 
 
 
-            <TextView
-                android:id="@+id/tvSaldo"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="center"
-                android:text="Saldo Anda Rp5000 Mencukupi"
-                android:textColor="@color/textSub"
-                android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/tvSaldo"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Saldo Anda Rp5000 Mencukupi"
+            android:textColor="@color/textSub"
+            android:textSize="12sp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colordevider"/>
+
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bayar Di Tempat"
+            android:layout_margin="16dp"
+            android:drawableRight="@drawable/ic_motor"
+            android:checked="true"
+            android:visibility="invisible"
+            />
+
+
     </RadioGroup>
 
     <LinearLayout

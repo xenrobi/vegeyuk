@@ -13,26 +13,27 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/judul"
-        android:background="@drawable/logo"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/judul"
+            android:layout_marginBottom="37dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vegeyuk_logo" />
 
         <customfonts.MyTextView
             android:id="@+id/judul"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Market Resto"
+            android:layout_above="@+id/a"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
+            android:text="WELCOME TO VEGEYUK"
             android:textColor="@color/Tex"
-            android:textSize="25sp"
-            android:layout_above="@+id/a"
-            android:layout_centerHorizontal="true"/>
+            android:textSize="25sp" />
 
         <customfonts.MyTextView
             android:id="@+id/a"
@@ -57,16 +58,16 @@
         mask:mask="+62-####-###-####"
         app:keep_hint="true" />
 
-    <Button
-        android:id="@+id/buttonGetVerificationCode"
-        android:layout_width="match_parent"
-        android:text="Masuk"
-        android:layout_height="60dp"
-        android:textColor="@color/White"
-        android:textAllCaps="false"
-        android:theme="@style/ButtonPrimary"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/editTextPhone"/>
+        <Button
+            android:id="@+id/buttonGetVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_marginTop="10dp"
+            android:text="Masuk"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:theme="@style/ButtonPrimary" />
 
 
     <LinearLayout

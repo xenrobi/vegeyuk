@@ -19,6 +19,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,9 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -48,7 +52,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     TextView mLocation;
     LatLng midLatLng;
     HashMap<String, String> sessionLocation;
-
+    SearchView searchView;
+    private static final String TAG = "MapsActivity";
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -61,6 +66,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        assert mapFragment != null;
+
         SetLocation = (Button) findViewById(R.id.btnSetLocation);
         SetLocation.setTypeface(type);
         mLocation = (TextView) findViewById(R.id.tvLocation);
@@ -68,7 +75,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         alamat = getAddressLine(mContext);
         String lat = null;
         String lang = null;
-
+        searchView = findViewById(R.id.search_view);
         sessionLocation = sessionManager.getLocation();
         if (sessionManager.isGetLocation()) {
             lat = sessionLocation.get(SessionManager.LAT);
@@ -97,6 +104,57 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 startActivity(intent);
             }
         });
+
+
+        //SEARCH VIEW MAP
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                // on below line we are getting the
+                // location name from search view.
+                String location = searchView.getQuery().toString();
+
+                // below line is to create a list of address
+                // where we will store the list of all address.
+                List<Address> addressList = null;
+
+                // checking if the entered location is null or not.
+                if (location != null || location.equals("")) {
+                    // on below line we are creating and initializing a geo coder.
+                    Geocoder geocoder = new Geocoder(MapsActivity.this);
+                    try {
+                        // on below line we are getting location from the
+                        // location name and adding that location to address list.
+                        addressList = geocoder.getFromLocationName(location, 1);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    // on below line we are getting the location
+                    // from our list a first position.
+                    Address address = addressList.get(0);
+
+                    // on below line we are creating a variable for our location
+                    // where we will add our locations latitude and longitude.
+                    LatLng latLng = new LatLng(address.getLatitude(), address.getLongitude());
+
+                    // on below line we are adding marker to that position.
+                    mMap.addMarker(new MarkerOptions().position(latLng).title(location));
+
+                    // below line is to animate camera to that position.
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
+                }
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+        // at last we calling our map fragment to update.
+        mapFragment.getMapAsync(this);
+
     }
 
 
@@ -115,7 +173,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location, 17), 5000, null);
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location, 17), 100, null);
 
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -239,6 +297,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
         alert.show();
     }
+
+
+
+
 
 
 }

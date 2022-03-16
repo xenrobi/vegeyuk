@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Market Resto</string>
+    <string name="app_name">Vegeyuk</string>
     <string name="lostconnection">Gagal terhubung ke server</string>
     <string name="memuat">Memuat...</string>
     <string name="cari">Cari...</string>
@@ -15,9 +15,9 @@
     <string name="error">Terjadi kesalahan, Kami Akan Segera Meperbaikinya</string>
     <string name="msg">Mohon Diterima Semua Permision</string>
     <string name="title_activity_maps">Map</string>
-    <string name="path">https://topapp.id/marketresto/public/fotomenu/</string>
+    <string name="path">http://192.168.43.54/marketresto/public/fotomenu/</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="path_restoran">https://topapp.id/marketresto/public/fotorestoran/</string>
+    <string name="path_restoran">http://192.168.43.54/marketresto/public/fotorestoran/</string>
     <string name="title_activity_maps_delivery">Map</string>
 
 
