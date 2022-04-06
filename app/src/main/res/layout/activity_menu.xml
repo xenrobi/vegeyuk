@@ -47,18 +47,18 @@
                 android:id="@+id/tvAlamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginBottom="62dp"
+                android:maxLines="1"
+                android:text="Alamat"
+                android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:maxLines="1"
-                android:textColor="@android:color/white"
-                android:layout_marginBottom="62dp"
-                android:layout_marginEnd="64dp"
-                android:layout_marginStart="12dp"
-                app:layout_collapseMode="parallax"
-                android:layout_gravity="bottom"
-                android:text="Jl. Srikandi Perumahan Wadya Graha 1"
-                android:layout_marginRight="64dp"
-                android:layout_marginLeft="10dp" />
+                app:layout_collapseMode="parallax" />
 
             <customfonts.MyTextView
                 android:id="@+id/tvOprasional"

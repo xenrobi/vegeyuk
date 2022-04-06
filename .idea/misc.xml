@@ -3,7 +3,37 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_cartlist.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_detail_order.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_edit_konsumen.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_maps.xml" value="0.2" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_maps_delivery.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_penilaian.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_signin.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_signup.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_splash.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_success_order.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_verify.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/bag_total.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/dialog_image_zoom.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/dialog_place_order.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/dialog_rekomendasi.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_account.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_favorite.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_list_history.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_list_search.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_order.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_resto.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/single_row_list_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/tool_bar.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/toolbar_cart.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/menu/bottom_nav_items.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/menu/menu_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/menu/menu_location_cart.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/menu/my_option_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

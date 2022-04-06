@@ -11,17 +11,17 @@
         android:id="@+id/view" />
 
     <TextView
+        android:id="@+id/item_title"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Rendang Daging"
-        android:id="@+id/item_title"
-        android:gravity="center"
-        android:textSize="@dimen/textTitleStyle"
-        android:textColor="#ffffff"
         android:layout_alignBottom="@+id/view"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:gravity="center"
+        android:text="Nama Makanan"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textTitleStyle" />
 
 
     <ImageView
@@ -65,7 +65,7 @@
             android:layout_marginBottom="2dp"
             android:maxLines="3"
             android:lineSpacingExtra="1dp"
-            android:text="Ikan grami dengan bubu khas masakan Melayu"
+            android:text="Deskripsi item"
             android:textColor="@color/Tex"
             android:scrollbars = "vertical"
             android:textSize="@dimen/textSubtitleStyle" />
