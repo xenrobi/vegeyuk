@@ -15,7 +15,7 @@
     <string name="error">Terjadi kesalahan, Kami Akan Segera Meperbaikinya</string>
     <string name="msg">Mohon Diterima Semua Permision</string>
     <string name="title_activity_maps">Map</string>
-    <string name="path">https://vegeyuk.com/vegeyuk/public/fotomenu/</string>
+    <string name="path">https://vegeyuk.com/public/fotomenu/</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="path_restoran">https://vegeyuk.com/public/fotorestoran/</string>
     <string name="title_activity_maps_delivery">Map</string>
