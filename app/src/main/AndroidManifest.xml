@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.vegeyuk.marketresto">
-
     <!-- permission -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -15,52 +15,63 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.Otp"
+        />
 
         <!-- main activity -->
         <activity
-            android:name="com.example.vegeyuk.marketresto.activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <!-- Splash Activity -->
-        <activity
-            android:name="com.example.vegeyuk.marketresto.activities.SplashActivity"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.NoAll">
+            android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- sign in activity -->
-        <activity
-            android:name="com.example.vegeyuk.marketresto.activities.SigninActivity"
-            android:theme="@style/AppTheme.NoAll" />
-        <!-- Sign up aktivity -->
-        <activity
-            android:name="com.example.vegeyuk.marketresto.activities.SignUpActivity"
-            android:theme="@style/AppTheme.NoAll" />
-        <activity
-            android:name="com.example.vegeyuk.marketresto.activities.VerifyActifity"
-            android:theme="@style/AppTheme.NoAll" />
-        <activity android:name="com.example.vegeyuk.marketresto.activities.SettingActivity" />
-        <activity
-            android:name="com.example.vegeyuk.marketresto.activities.CartListActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.example.vegeyuk.marketresto.activities.MenuActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
 
+
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoAll"/>
+         <!-- sign in activity -->
+        <activity
+            android:name=".activities.SigninActivity"
+            android:theme="@style/AppTheme.NoAll" /> <!-- Sign up aktivity -->
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:theme="@style/AppTheme.NoAll" />
+        <activity
+            android:name=".activities.VerifyActifity"
+            android:theme="@style/AppTheme.NoAll" />
+        <activity android:name=".activities.SettingActivity" />
+        <activity
+            android:name=".activities.CartListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <!-- service -->
-        <service android:name="com.example.vegeyuk.marketresto.utils.MyFirebaseInstanceIDService">
+        <service
+            android:name=".utils.MyFirebaseInstanceIDService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.example.vegeyuk.marketresto.utils.MyFirebaseMessagingService">
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -69,22 +80,25 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.example.vegeyuk.marketresto.activities.MapsActivity"
+            android:name=".activities.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name="com.example.vegeyuk.marketresto.activities.SuccessOrder"
+            android:name=".activities.SuccessOrder"
             android:theme="@style/AppTheme.NoAll" />
-        <activity android:name="com.example.vegeyuk.marketresto.activities.EditKonsumen" />
-        <activity android:name="com.example.vegeyuk.marketresto.activities.DetailOrderActivity" />
-        <activity android:name="com.example.vegeyuk.marketresto.activities.PenilaianActivity" />
+        <activity android:name=".activities.EditKonsumen" />
+        <activity android:name=".activities.DetailOrderActivity" />
+        <activity android:name=".activities.PenilaianActivity" />
         <activity
-            android:name="com.example.vegeyuk.marketresto.activities.MapsDeliveryActivity"
-            android:label="@string/title_activity_maps_delivery"></activity>
+            android:name=".activities.MapsDeliveryActivity"
+            android:label="@string/title_activity_maps_delivery" />
     </application>
 
 </manifest>

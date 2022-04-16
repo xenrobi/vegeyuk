@@ -131,17 +131,16 @@
 
 
                     <customfonts.MyTextView
-                        android:layout_weight="1"
                         android:id="@+id/tvPhoneKonsumen"
-                        android:textSize="@dimen/textsub"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="+6281268475430"
-                        android:textColor="@color/Tex"
+                        android:layout_weight="1"
                         android:background="#0000"
-
                         android:gravity="left"
-                        />
+                        android:text="+628123456789"
+                        android:textColor="@color/Tex"
+
+                        android:textSize="@dimen/textsub" />
                 </LinearLayout>
 
 
@@ -172,17 +171,16 @@
                     android:background="#0000"/>
 
                 <customfonts.MyTextView
-                    android:layout_weight="1"
                     android:id="@+id/tvAlamatAntar"
-                    android:textSize="@dimen/text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Jl. Garuda Sakti KM 10"
-                    android:textColor="@color/Tex"
+                    android:layout_weight="1"
                     android:background="#0000"
-
                     android:gravity="left"
-                    />
+                    android:text="Uvers"
+                    android:textColor="@color/Tex"
+
+                    android:textSize="@dimen/text" />
 
             </LinearLayout>
 

@@ -3,8 +3,9 @@ package com.example.vegeyuk.marketresto.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.vegeyuk.marketresto.R;
 import com.example.vegeyuk.marketresto.utils.SessionManager;

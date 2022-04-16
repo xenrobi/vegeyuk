@@ -3,10 +3,9 @@ package com.example.vegeyuk.marketresto.activities;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import android.util.Log;
 import android.util.Patterns;
 import android.view.inputmethod.InputMethodManager;
@@ -20,6 +19,8 @@ import com.example.vegeyuk.marketresto.responses.ResponseValue;
 import com.example.vegeyuk.marketresto.rest.ApiService;
 import com.example.vegeyuk.marketresto.utils.SessionManager;
 import com.example.vegeyuk.marketresto.utils.SharedPrefManager;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.annotations.Nullable;
 
 import java.util.HashMap;
 

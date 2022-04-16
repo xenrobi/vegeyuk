@@ -7,13 +7,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +18,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.SearchView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+
 import com.example.vegeyuk.marketresto.R;
 import com.example.vegeyuk.marketresto.activities.CartListActivity;
 import com.example.vegeyuk.marketresto.adapter.PagerAdapterTabSearch;
@@ -35,6 +35,7 @@ import com.example.vegeyuk.marketresto.responses.ResponseSearch;
 import com.example.vegeyuk.marketresto.responses.ResponseValue;
 import com.example.vegeyuk.marketresto.rest.ApiService;
 import com.example.vegeyuk.marketresto.utils.SessionManager;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -97,7 +98,7 @@ public class SearchFragment extends Fragment {
 
 
         mApiService = ServerConfig.getAPIService();
-        TextView searchText = (TextView) searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        TextView searchText = (TextView) searchView.findViewById(androidx.appcompat.R.id.search_src_text);
         Typeface myCustomFont = Typeface.createFromAsset(getActivity().getAssets(), "fonts/MavenPro-Regular.ttf");
         searchText.setTypeface(myCustomFont);
         tabLayout = (TabLayout) view.findViewById(R.id.tab_layout);

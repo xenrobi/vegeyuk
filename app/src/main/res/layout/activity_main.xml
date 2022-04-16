@@ -16,14 +16,13 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
 
 
-    <android.support.design.widget.BottomNavigationView
-        android:layout_alignParentBottom="true"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="@color/White"
-        app:menu="@menu/bottom_nav_items"
-        />
+        app:menu="@menu/bottom_nav_items" />
 
 
 

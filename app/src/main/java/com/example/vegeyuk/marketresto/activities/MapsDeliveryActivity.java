@@ -2,10 +2,12 @@ package com.example.vegeyuk.marketresto.activities;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
 
 import com.example.vegeyuk.marketresto.R;
 import com.example.vegeyuk.marketresto.models.Delivery;
@@ -25,6 +27,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
 
 public class MapsDeliveryActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -56,6 +59,7 @@ public class MapsDeliveryActivity extends FragmentActivity implements OnMapReady
         database.child("delivery").child(pesan.getId().toString()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                @Nullable
                 Delivery delivery = dataSnapshot.getValue(Delivery.class);
                 manDelivery = new LatLng(Double.parseDouble(delivery.getLat().toString()), Double.parseDouble(delivery.getLng().toString()));
 

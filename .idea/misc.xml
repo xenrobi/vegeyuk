@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_cartlist.xml" value="0.22826086956521738" />
-        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_detail_order.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_detail_order.xml" value="0.264" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_edit_konsumen.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_maps.xml" value="0.2" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_maps_delivery.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_otp.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_penilaian.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_signin.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/activity_signup.xml" value="0.22826086956521738" />
@@ -22,12 +23,23 @@
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/dialog_rekomendasi.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_account.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_favorite.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_list_favorite.xml" value="0.1" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_list_history.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_list_search.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_menu.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_order.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_resto.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/fragment_search.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/layout_success_order.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/messages.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/messages_with_search.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/messages_with_tab.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/single_row_cart_list.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/single_row_list_detail_order.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/single_row_list_favorit.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/single_row_list_menu.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/single_row_list_order.xml" value="0.2962529274004684" />
+        <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/single_row_list_restoran.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/tool_bar.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/layout/toolbar_cart.xml" value="0.22826086956521738" />
         <entry key="..\:/Android Studio/Skripsi/vegeyuk/app/src/main/res/menu/bottom_nav_items.xml" value="0.25416666666666665" />
@@ -76,7 +88,7 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

@@ -2,10 +2,11 @@ package com.example.vegeyuk.marketresto.activities;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ import com.example.vegeyuk.marketresto.fragment.RestoFragment;
 import com.example.vegeyuk.marketresto.fragment.OrderFragment;
 import com.example.vegeyuk.marketresto.fragment.SearchFragment;
 import com.example.vegeyuk.marketresto.utils.SessionManager;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

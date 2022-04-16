@@ -5,12 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.vegeyuk.marketresto.config.ServerConfig;
 import com.example.vegeyuk.marketresto.R;
@@ -79,7 +80,7 @@ public class VerifyActifity extends AppCompatActivity {
 
         Toast.makeText(mContext, user.getKonsumenPhone(), Toast.LENGTH_SHORT).show();
 //      Memanggil method untuk mengirim code
-        // sendVerificationCode(user.getKonsumenPhone());
+        //sendVerificationCode(user.getKonsumenPhone());
     }
 
 
@@ -134,7 +135,7 @@ public class VerifyActifity extends AppCompatActivity {
     private void sendVerificationCode(String phone) {
 
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                phone,        // Phone number to verify
+                ("+")+phone,        // Phone number to verify
                 60,                 // Timeout duration
                 TimeUnit.SECONDS,   // Unit of timeout
                 this,               // Activity (for callback binding)
@@ -152,7 +153,7 @@ public class VerifyActifity extends AppCompatActivity {
 
         @Override
         public void onVerificationFailed(FirebaseException e) {
-            Toast.makeText(mContext, "verification fialed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, "verification failed", Toast.LENGTH_SHORT).show();
             if (e instanceof FirebaseAuthInvalidCredentialsException) {
                 // Invalid request
                 // [START_EXCLUDE]
@@ -182,7 +183,7 @@ public class VerifyActifity extends AppCompatActivity {
 
     public void ResendCode(String phone) {
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                phone,        // Phone number to verify
+                ("+")+phone,        // Phone number to verify
                 1,               // Timeout duration
                 TimeUnit.MINUTES,   // Unit of timeout
                 this,               // Activity (for callback binding)

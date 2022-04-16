@@ -1,9 +1,10 @@
 package com.example.vegeyuk.marketresto.adapter;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.vegeyuk.marketresto.fragment.SearchMenuFragment;
 import com.example.vegeyuk.marketresto.fragment.SearchRestoranFragment;
