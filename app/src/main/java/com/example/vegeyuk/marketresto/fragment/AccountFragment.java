@@ -22,6 +22,7 @@ import com.example.vegeyuk.marketresto.R;
 import com.example.vegeyuk.marketresto.activities.EditKonsumen;
 import com.example.vegeyuk.marketresto.activities.PenilaianActivity;
 import com.example.vegeyuk.marketresto.activities.SigninActivity;
+import com.example.vegeyuk.marketresto.activities.topup;
 import com.example.vegeyuk.marketresto.config.ServerConfig;
 import com.example.vegeyuk.marketresto.models.User;
 import com.example.vegeyuk.marketresto.responses.ResponseKonsumen;
@@ -41,7 +42,7 @@ public class AccountFragment extends Fragment {
 
     Context mContext;
     SessionManager sessionManager;
-    TextView tvNamaUser, tvPhoneUser, tvEmailUser, tvBalance, btnBantuan, btnLayanan, btnPrivasi, btnPenialaian, signout;
+    TextView tvNamaUser, tvPhoneUser, tvEmailUser, tvBalance, btnBantuan, btnLayanan, btnPrivasi, btnPenialaian, btntop,signout;
     ImageButton edit;
     HashMap<String, String> user;
     ApiService mApiService;
@@ -81,6 +82,15 @@ public class AccountFragment extends Fragment {
             }
         });
 
+
+        btntop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, topup.class);
+                startActivity(intent);
+            }
+        });
+
         btnPenialaian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,6 +117,7 @@ public class AccountFragment extends Fragment {
         tvBalance = (TextView) view.findViewById(R.id.tvBalance);
         edit = (ImageButton) view.findViewById(R.id.edit);
         btnPenialaian = (TextView) view.findViewById(R.id.btnPenilaian);
+        btntop = (TextView) view.findViewById(R.id.btntp);
     }
 
 
@@ -128,7 +139,7 @@ public class AccountFragment extends Fragment {
                         tvBalance.setText(kursIndonesia(Double.parseDouble(user1.getKonsumenBalance())));
                         progressDialog.dismiss();
                     } else {
-                        user1.setKonsumenBalance("Opps..Priksa Konseksi Internet Anda");
+                        user1.setKonsumenBalance("Opps..Priksa Koneksi Internet Anda");
                         tvBalance.setText(user1.getKonsumenBalance());
                         tvBalance.setTextSize(13);
                         progressDialog.dismiss();
@@ -138,7 +149,7 @@ public class AccountFragment extends Fragment {
 
             @Override
             public void onFailure(Call<ResponseKonsumen> call, Throwable t) {
-                user1.setKonsumenBalance("Opps..Priksa Konseksi Internet Anda");
+                user1.setKonsumenBalance("Opps..Priksa Koneksi Internet Anda");
                 tvBalance.setText(user1.getKonsumenBalance());
                 tvBalance.setTextSize(13);
                 progressDialog.dismiss();

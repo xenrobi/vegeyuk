@@ -118,9 +118,9 @@ public class SignUpActivity extends AppCompatActivity {
                             //snack bar success
                             Snackbar.make(coordinatorLayout, message, Snackbar.LENGTH_LONG).show();
 
-//                            Intent intent = new Intent(mContext,SigninActivity.class);
-//                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
-//                            startActivity(intent);
+                        //  Intent intent = new Intent(mContext,SigninActivity.class);
+                           //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY);
+                          // startActivity(intent);
 
                         } else {
                             Snackbar.make(coordinatorLayout, message, Snackbar.LENGTH_LONG).show();

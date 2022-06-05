@@ -213,7 +213,7 @@
                 android:textSize="@dimen/text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Muhammad Aufa"
+                android:text="User"
                 android:textColor="@color/textSub"
                 android:background="#0000"
 
@@ -227,7 +227,7 @@
                 android:textSize="@dimen/textsub"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="+6281268475430"
+                android:text="+6281234567"
                 android:textColor="@color/Tex"
                 android:background="#0000"
 
@@ -285,7 +285,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="5dp"
-                android:text="Jl. Garuda Sakti KM 10"
+                android:text="Alamat User"
                 android:textColor="@color/green"
                 android:textSize="@dimen/text" />
         </LinearLayout>
@@ -326,21 +326,16 @@
     </LinearLayout>
 
 
-
-
-
-
-
-
-
-
     <RadioGroup
         android:id="@+id/rgMetodeBayar"
-        android:layout_below="@+id/linear2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rect"
-        android:layout_margin="16dp">
+        android:layout_below="@+id/linear2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rect">
 
 
         <RadioButton
@@ -349,41 +344,36 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            android:text="Resto - Pay "
-            android:drawableRight="@drawable/ic_resto_pay"
-            />
-
-
+            android:drawableRight="@drawable/ic_motor"
+            android:text="DiAntar" />
 
         <TextView
             android:id="@+id/tvSaldo"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="16dp"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="Saldo Anda Rp5000 Mencukupi"
             android:textColor="@color/textSub"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colordevider"/>
+            android:background="@color/colordevider" />
 
 
         <RadioButton
             android:id="@+id/rbCash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bayar Di Tempat"
             android:layout_margin="16dp"
-            android:drawableRight="@drawable/ic_motor"
             android:checked="true"
-            android:visibility="invisible"
-            />
+            android:drawableRight="@drawable/ic_resto_pay"
+            android:text="Ambil Sendiri" />
 
 
     </RadioGroup>

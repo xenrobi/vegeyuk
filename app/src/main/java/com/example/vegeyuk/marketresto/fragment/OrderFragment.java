@@ -87,7 +87,7 @@ public class OrderFragment extends Fragment {
         status.add("proses");
         status.add("pengantaran");
 
-        mApiService.getOrder(id_konsumen, status).enqueue(new Callback<ResponseOrder>() {
+        mApiService.getOrder(id_konsumen, status, null, null).enqueue(new Callback<ResponseOrder>() {
             @Override
             public void onResponse(Call<ResponseOrder> call, Response<ResponseOrder> response) {
                 if (response.isSuccessful()) {

@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.vegeyuk.marketresto.config.ServerConfig;
 import com.example.vegeyuk.marketresto.R;
 import com.example.vegeyuk.marketresto.models.User;
+import com.example.vegeyuk.marketresto.responses.ResponseAuth;
 import com.example.vegeyuk.marketresto.responses.ResponseValue;
 import com.example.vegeyuk.marketresto.rest.ApiService;
 import com.example.vegeyuk.marketresto.utils.SessionManager;
@@ -69,7 +70,7 @@ public class VerifyActifity extends AppCompatActivity {
         mContext = this;
         ButterKnife.bind(this);
         user = (User) getIntent().getSerializableExtra("user");
-        txtResend.setText("Masukan kode verifikasi yang dikirim melalui \n SMS pada nomor ponsel +" + user.getKonsumenPhone());
+        txtResend.setText("Masukan kode verifikasi yang dikirim melalui \n Ke WA pada nomor ponsel +" + user.getKonsumenPhone());
         Typeface type = Typeface.createFromAsset(getAssets(), "fonts/MavenPro-Regular.ttf");
         btnSigin.setTypeface(type);
 
@@ -80,7 +81,7 @@ public class VerifyActifity extends AppCompatActivity {
 
         Toast.makeText(mContext, user.getKonsumenPhone(), Toast.LENGTH_SHORT).show();
 //      Memanggil method untuk mengirim code
-        //sendVerificationCode(user.getKonsumenPhone());
+//        sendVerificationCode(user.getKonsumenPhone());
     }
 
 
@@ -92,8 +93,20 @@ public class VerifyActifity extends AppCompatActivity {
         //verifySignInCode();
 //        jika menguji login tanpa menggunakan code OTP
         SessionUser();
+//        verifyWA();
 
 
+    }
+
+    private void verifyWA() {
+        String code = editTextCode.getText();
+        if(user.getKode().equals(code)){
+            Toast.makeText(getApplicationContext(), "login successfuli", Toast.LENGTH_LONG).show();
+            SessionUser();
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "Incorrect Verificarion Code", Toast.LENGTH_LONG).show();
+        }
     }
 
 
@@ -178,7 +191,35 @@ public class VerifyActifity extends AppCompatActivity {
 
     @OnClick(R.id.resendCode)
     void onResendCode() {
-        ResendCode(user.getKonsumenPhone());
+
+        progressDialog = ProgressDialog.show(mContext, null, getString(R.string.memuat), true, false);
+
+        mApiService.signinRequest(user.getKonsumenPhone()).enqueue(new Callback<ResponseAuth>() {
+            @Override
+            public void onResponse(Call<ResponseAuth> call, Response<ResponseAuth> response) {
+                progressDialog.dismiss();
+                if (response.isSuccessful()) {
+
+                    String value = response.body().getValue();
+                    String message = response.body().getMessage();
+                    //phone terdaftar
+                    if (value.equals("1")) {
+                        //Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
+                        user = response.body().getData();
+                        Toast.makeText(mContext, "Berhasil mengirim kode ulang", Toast.LENGTH_SHORT).show();
+                        //nomor phone tidak terdaftar
+                    } else {
+                        Toast.makeText(mContext, "Gagal mengirim kode ulang", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<ResponseAuth> call, Throwable t) {
+                progressDialog.dismiss();
+                Toast.makeText(mContext, "Gagal mengirim kode ulang", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public void ResendCode(String phone) {

@@ -14,32 +14,27 @@
         android:roundIcon="@mipmap/vegeyuk_lc_round"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".activities.Otp"
-        />
-
-        <!-- main activity -->
+            android:name=".activities.topup"
+            android:exported="false" />
+        <activity android:name=".activities.Otp" /> <!-- main activity -->
         <activity
             android:name=".activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-
-
-        <!-- Splash Activity -->
+        </activity> <!-- Splash Activity -->
         <activity
             android:name=".activities.SplashActivity"
             android:exported="true"
             android:noHistory="true"
-            android:theme="@style/AppTheme.NoAll"/>
-         <!-- sign in activity -->
+            android:theme="@style/AppTheme.NoAll" /> <!-- sign in activity -->
         <activity
             android:name=".activities.SigninActivity"
             android:theme="@style/AppTheme.NoAll" /> <!-- Sign up aktivity -->
@@ -55,8 +50,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activities.MenuActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <!-- service -->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- service -->
         <service
             android:name=".utils.MyFirebaseInstanceIDService"
             android:exported="true">
@@ -71,7 +65,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -82,7 +75,8 @@
         -->
         <uses-library
             android:name="org.apache.http.legacy"
-            android:required="false"/>
+            android:required="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />

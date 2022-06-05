@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CFCAC1"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:text="Filter Riwayat"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:drawableTint="@color/colorPrimary"
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Tanggal"
+                android:inputType="none"
+                android:focusable="false"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@drawable/rounded_corners_edittext_light"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
@@ -12,4 +64,4 @@
     <include layout="@layout/messages_with_tab"
         android:id="@id/error"
         android:visibility="gone"/>
-</RelativeLayout>
+</LinearLayout>

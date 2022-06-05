@@ -13,10 +13,12 @@ public class ServerConfig {
     //https://topapp.id/marketresto/api/v1/
 
     //private static final String BASE_URL_API = "http://172.16.140.87/marketresto/api/v1/";
-    private static final String BASE_URL_API = "https://vegeyuk.com/api/v1/";
+//    private static final String BASE_URL_API = "https://vegeyuk.com/api/v1/";
+    private static final String BASE_URL_API = "https://marketresto.haydemo.my.id/api/v1/";
     //192.168.0.102
     //192.168.0.104
     //192.168.43.54
+    //https://vegeyuk.com/api/v1/
     // Mendeklarasikan Interface BaseApiService
     public static ApiService getAPIService(){
         return ClientService.getClient(BASE_URL_API).create(ApiService.class);

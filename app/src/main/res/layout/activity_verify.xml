@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
 
 <RelativeLayout
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,19 +15,19 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="40dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="214dp"
+        android:layout_height="116dp"
         android:layout_above="@+id/textSendCode"
-        android:background="@drawable/logo" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/vegeyuk_logo" />
 
     <customfonts.MyTextView
         android:id="@+id/textSendCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/editTextCode"
-        android:text="Masukan kode verifikasi yang dikirim melalui SMS pada nomor ponsel +628-1268-475430"
+        android:text="Masukan kode verifikasi yang dikirim melalui WA pada nomor ponsel +628-1268-475430"
         android:textAlignment="center" />
 
     <com.github.irvingryan.VerifyCodeView
@@ -44,20 +44,20 @@
         android:id="@+id/buttonSignIn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_below="@id/editTextCode"
         android:text="Verifikasi kode"
         android:textAllCaps="false"
-        android:theme="@style/ButtonPrimary"
         android:textColor="@color/White"
-        android:layout_below="@id/editTextCode"/>
+        android:theme="@style/ButtonPrimary" />
 
     <customfonts.MyTextView
         android:id="@+id/pesanresend"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttonSignIn"
-        android:textAlignment="center"
         android:layout_marginTop="40dp"
-        android:text="Jika anda tidak menerima kode verifikasi melalui SMS klik disini untuk"/>
+        android:text="Jika anda tidak menerima kode verifikasi melalui WA klik disini untuk"
+        android:textAlignment="center" />
 
     <customfonts.MyTextView
         android:id="@+id/resendCode"

@@ -422,11 +422,12 @@ public class CartListActivity extends AppCompatActivity implements CartAdapter.C
         RadioButton cashButton = (RadioButton) findViewById(R.id.rbCash);
         if (saldo >= Total) {
             restopayButton.setEnabled(true);
+            cashButton.setChecked(true);
             mSaldo.setText("Saldo Anda " + kursIndonesia(saldo) + " Mencukupi");
             mSaldo.setTextColor(ContextCompat.getColor(mContext, R.color.green));
         } else {
             restopayButton.setEnabled(false);
-            cashButton.setChecked(true);
+            cashButton.setEnabled(false);
             mSaldo.setText("Saldo Anda " + kursIndonesia(saldo) + " Tidak Mencukupi");
             mSaldo.setTextColor(ContextCompat.getColor(mContext, R.color.colorPrimaryDark));
         }
@@ -469,11 +470,13 @@ public class CartListActivity extends AppCompatActivity implements CartAdapter.C
         String jarak_antar = resto.getRestoranDistace().toString();
         String pesan_biaya_antar = Double.toString(getBiayaAntar());
         int pajakPb1 = resto.getRestoran_pajak_pb_satu();
+
         String pesan_metode_bayar;
-        if (metBayar.equals("Resto - Pay ")) {
-            pesan_metode_bayar = "epay";
-        } else {
-            pesan_metode_bayar = "cash";
+
+        if (metBayar.equals("DiAntar")) {
+            pesan_metode_bayar = "antar";
+        }else{
+            pesan_metode_bayar = "ambil";
         }
 
 

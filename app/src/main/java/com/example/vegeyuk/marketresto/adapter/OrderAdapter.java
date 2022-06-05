@@ -58,7 +58,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         holder.mStatus.setText(pesan.getOrderStatus());
         holder.mTanggal.setText(DateHelper.getGridDate(mContext, timeStringToMilis(pesan.getCreatedAt())));
 
-        if (pesan.getOrderStatus().equalsIgnoreCase("proeses")) {
+        if (pesan.getOrderStatus().equalsIgnoreCase("proses")) {
             holder.mapDelivery.setVisibility(View.INVISIBLE);
         } else if (pesan.getOrderStatus().equalsIgnoreCase("pengantaran")) {
             holder.mapDelivery.setVisibility(View.VISIBLE);

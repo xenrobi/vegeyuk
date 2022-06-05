@@ -28,6 +28,10 @@ public class User implements Serializable{
     @Expose
     private String token;
 
+    @SerializedName("kode")
+    @Expose
+    private String kode;
+
     public Integer getId() {
         return id;
     }
@@ -81,6 +85,13 @@ public class User implements Serializable{
 
     public void setToken(String token) {
         this.token = token;
+    }
+    public String getKode() {
+        return kode;
+    }
+
+    public void setKode(String kode) {
+        this.kode = kode;
     }
 
 }

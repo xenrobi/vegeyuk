@@ -264,8 +264,23 @@
                             android:text="Beri Kami Nilai"
                             android:textColor="@color/Tex"
                             android:textSize="@dimen/text" />
+
+
+
                     </LinearLayout>
 
+                    <customfonts.MyTextView
+                        android:id="@+id/btntp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:drawableRight="@drawable/ic_chevron"
+                        android:gravity="left"
+                        android:padding="15dp"
+                        android:text="Topup"
+                        android:textColor="@color/Tex"
+                        android:textSize="@dimen/text" />
                 </LinearLayout>
 
 

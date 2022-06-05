@@ -34,7 +34,7 @@ public class SharedPrefManager {
 
     public String getDeviceToken(){
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
-        return sharedPreferences.getString(TAG_TOKEN,null);
+        return sharedPreferences.getString(TAG_TOKEN,"333333");
     }
 
 }

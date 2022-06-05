@@ -18,8 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/judul"
-            android:layout_marginBottom="37dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
             android:background="@drawable/vegeyuk_logo" />
 
         <customfonts.MyTextView
@@ -39,38 +39,37 @@
             android:id="@+id/a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Masukkan nomor ponsel anda"
-            android:gravity="center"
+            android:layout_above="@+id/editTextPhone"
             android:layout_marginBottom="3dp"
-            android:layout_above="@+id/editTextPhone"/>
-
+            android:gravity="center"
+            android:text="Masukkan nomor ponsel anda" />
 
 
         <br.com.sapereaude.maskedEditText.MaskedEditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-        android:inputType="phone"
-        android:layout_centerInParent="true"
-        android:typeface="monospace"
-        mask:allowed_chars="1234567890"
-        mask:mask="+62-####-###-####"
-        app:keep_hint="true" />
+            android:layout_centerInParent="true"
+            android:inputType="phone"
+            android:typeface="monospace"
+            app:keep_hint="true"
+            mask:allowed_chars="1234567890"
+            mask:mask="+62-####-###-####" />
+
 
         <Button
             android:id="@+id/buttonGetVerificationCode"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_below="@+id/editTextPhone"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="16dp"
             android:text="Masuk"
             android:textAllCaps="false"
             android:textColor="@color/White"
             android:theme="@style/ButtonPrimary" />
 
-
-    <LinearLayout
+        <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

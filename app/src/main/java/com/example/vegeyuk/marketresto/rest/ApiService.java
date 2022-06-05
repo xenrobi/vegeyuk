@@ -94,7 +94,9 @@ public interface ApiService {
     //gerOrderIn proces
     @GET("order")
     Call<ResponseOrder> getOrder(@Query("id_konsumen") String id_konsumen,
-                                 @Query("status[]") ArrayList<String> status);
+                                 @Query("status[]") ArrayList<String> status,
+                                 @Query ("start") String start,
+                                 @Query ("end") String end);
 
     //setFavorit
     @FormUrlEncoded
