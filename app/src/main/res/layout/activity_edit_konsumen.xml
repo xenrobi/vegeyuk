@@ -47,6 +47,7 @@
                         android:hint="Nama"
                         android:maxLines="1"
                         android:lines="1"
+                        android:background="@color/White"
                         android:id="@+id/editTextNama"
                         android:inputType="textPersonName"/>
 
@@ -64,7 +65,7 @@
                         android:typeface="monospace"
                         mask:allowed_chars="1234567890"
                         mask:mask="+62-###########"
-
+                        android:background="@color/White"
                         app:keep_hint="false"
                         android:layout_below="@+id/imageView"
                         />
@@ -78,6 +79,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Alamat Email"
+                        android:background="@color/White"
                         android:inputType="textEmailAddress"
                         android:id="@+id/editTextEmail"/>
 

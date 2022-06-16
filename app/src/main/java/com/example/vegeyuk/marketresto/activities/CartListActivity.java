@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -418,16 +419,19 @@ public class CartListActivity extends AppCompatActivity implements CartAdapter.C
         mTotal.setText(kursIndonesia(Total));
         mAlamatAntar.setText(location.get(SessionManager.ALAMAT));
 
+
         restopayButton = (RadioButton) findViewById(R.id.rbRestoPay);
         RadioButton cashButton = (RadioButton) findViewById(R.id.rbCash);
         if (saldo >= Total) {
-            restopayButton.setEnabled(true);
-            cashButton.setChecked(true);
+            restopayButton.setChecked(true);
+            cashButton.setEnabled(true);
+            btnOrder.setEnabled(true);
             mSaldo.setText("Saldo Anda " + kursIndonesia(saldo) + " Mencukupi");
             mSaldo.setTextColor(ContextCompat.getColor(mContext, R.color.green));
         } else {
             restopayButton.setEnabled(false);
             cashButton.setEnabled(false);
+            btnOrder.setEnabled(false);
             mSaldo.setText("Saldo Anda " + kursIndonesia(saldo) + " Tidak Mencukupi");
             mSaldo.setTextColor(ContextCompat.getColor(mContext, R.color.colorPrimaryDark));
         }
@@ -474,9 +478,9 @@ public class CartListActivity extends AppCompatActivity implements CartAdapter.C
         String pesan_metode_bayar;
 
         if (metBayar.equals("DiAntar")) {
-            pesan_metode_bayar = "antar";
+            pesan_metode_bayar = "antar ketujuan";
         }else{
-            pesan_metode_bayar = "ambil";
+            pesan_metode_bayar = "ambil sendiri";
         }
 
 
@@ -528,7 +532,7 @@ public class CartListActivity extends AppCompatActivity implements CartAdapter.C
 
 
     public void checkKondisi() {
-
+        Total = getBiayaAntar() + SubTotal;
         cekKetersedian();
         if (Double.parseDouble(resto.getRestoranDistace()) > resto.getRestoranDeliveryJarak()) {
             btnOrder.setEnabled(false);
@@ -542,7 +546,12 @@ public class CartListActivity extends AppCompatActivity implements CartAdapter.C
             btnOrder.setEnabled(false);
             btnOrder.setText("Terdapat Item yang Tidak Tersedia");
             btnOrder.setBackgroundColor(ContextCompat.getColor(mContext, R.color.colorhint));
-        } else {
+        } else if (saldo < Total) {
+            btnOrder.setEnabled(false);
+            btnOrder.setText("SALDO ANDA TIDAK CUKUP SILAHKAN TOPUP");
+            btnOrder.setBackgroundColor(ContextCompat.getColor(mContext, R.color.colorhint));
+        }
+        else {
             btnOrder.setEnabled(true);
             btnOrder.setText("Pesanan Sekarang");
             btnOrder.setBackgroundColor(ContextCompat.getColor(mContext, R.color.colorPrimaryDark));

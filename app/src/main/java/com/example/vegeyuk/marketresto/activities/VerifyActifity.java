@@ -92,8 +92,8 @@ public class VerifyActifity extends AppCompatActivity {
 //        untuk melakukan verifikasi dari code OTP yang di inputkan
         //verifySignInCode();
 //        jika menguji login tanpa menggunakan code OTP
-        SessionUser();
-//        verifyWA();
+      //  SessionUser();
+        verifyWA();
 
 
     }

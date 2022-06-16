@@ -65,7 +65,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             holder.mapDelivery.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(mContext, MapsDeliveryActivity.class);
+                    Intent intent = new Intent(mContext, DetailOrderActivity.class);
                     intent.putExtra("pesan", (Serializable) pesan);
                     mContext.startActivity(intent);
                 }

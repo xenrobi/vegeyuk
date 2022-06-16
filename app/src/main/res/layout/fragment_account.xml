@@ -183,6 +183,7 @@
                             android:gravity="center|left"
                             android:padding="15dp"
                             android:text="Bantuan"
+                            android:visibility="gone"
                             android:textColor="@color/Tex"
                             android:textSize="@dimen/text" />
 
@@ -210,6 +211,7 @@
                             android:padding="15dp"
                             android:text="Ketentuan Layanan"
                             android:textColor="@color/Tex"
+                            android:visibility="gone"
                             android:textSize="@dimen/text" />
 
                     </LinearLayout>
@@ -237,6 +239,7 @@
                             android:padding="15dp"
                             android:text="Kebijakan Privasi"
                             android:textColor="@color/Tex"
+                            android:visibility="gone"
                             android:textSize="@dimen/text" />
                     </LinearLayout>
 
