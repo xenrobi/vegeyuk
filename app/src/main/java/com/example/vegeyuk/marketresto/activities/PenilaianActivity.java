@@ -250,7 +250,7 @@ public class PenilaianActivity extends AppCompatActivity {
             public void onResponse(Call<ResponseValue> call, Response<ResponseValue> response) {
                 if (response.isSuccessful()) {
                     if (response.body().getValue().equalsIgnoreCase("1")) {
-                        Toast.makeText(PenilaianActivity.this, "Teriakasih Atas Penilaian Anda", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PenilaianActivity.this, "Terima kasih Atas Penilaian Anda", Toast.LENGTH_SHORT).show();
                         soal1.clearCheck();
                         soal2.clearCheck();
                         soal3.clearCheck();

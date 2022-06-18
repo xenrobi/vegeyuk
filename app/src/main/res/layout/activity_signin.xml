@@ -55,7 +55,7 @@
             android:typeface="monospace"
             app:keep_hint="true"
             mask:allowed_chars="1234567890"
-            mask:mask="+62-####-###-####" />
+            mask:mask="+62-####-####-####" />
 
 
         <Button

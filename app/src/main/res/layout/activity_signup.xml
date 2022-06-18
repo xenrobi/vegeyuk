@@ -12,14 +12,14 @@
         android:layout_height="match_parent"
         android:padding="5dp">
 
-        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginHorizontal="4dp"
             android:layout_marginTop="20dp"
-            card_view:cardCornerRadius="1dp">
+            mask:cardCornerRadius="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,7 +41,8 @@
                     <customfonts.MyEditText
                         android:id="@+id/editTextNama"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="60dp"
+                        android:background="@color/White"
                         android:hint="Nama"
                         android:inputType="textPersonName"
                         android:lines="1"
@@ -61,7 +62,7 @@
                         android:inputType="number"
                         android:typeface="monospace"
                         app:keep_hint="false"
-
+                        android:background="@color/White"
                         mask:allowed_chars="1234567890"
                         mask:mask="+62-###########" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -70,14 +71,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <customfonts.MyEditText
-                        android:id="@+id/editTextEmail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Alamat Email"
-                        android:inputType="textEmailAddress" />
-
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <customfonts.MyEditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20px"
+                    android:background="@color/White"
+                    android:hint="Alamat Email"
+                    android:inputType="textEmailAddress" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

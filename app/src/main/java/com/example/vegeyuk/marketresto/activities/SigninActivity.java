@@ -85,7 +85,7 @@ public class SigninActivity extends AppCompatActivity {
             return;
         }
 
-        if (phone.length() < 12) {
+        if (phone.length() < 13) {
             progressDialog.dismiss();
             editTextPhone.setError("Nomor telepon tidak valid");
             editTextPhone.requestFocus();

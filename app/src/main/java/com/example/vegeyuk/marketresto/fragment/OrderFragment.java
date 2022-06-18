@@ -108,7 +108,7 @@ public class OrderFragment extends Fragment {
                         message.setVisibility(View.VISIBLE);
                         icon_message.setImageResource(R.drawable.msg_order);
                         title_message.setText("Ayo Pesan Makanan Anda Sekarang");
-                        sub_title_message.setText("Restoran di Sekitar Anda Siap \n Mengantarkan Pesaan Anda \n");
+                        sub_title_message.setText("Restoran di Sekitar Anda Siap \n Mengantarkan Pesanan Anda \n");
                         progressDialog.dismiss();
 
                     }

@@ -353,7 +353,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="5. Apakah sistem market resto ini mempermudah dalam jual beli makanan ?"
+                android:text="5. Apakah sistem vegeyuk ini mempermudah dalam jual beli makanan ?"
                 android:textColor="@color/Tex"
                 android:textStyle="bold"
                 />
@@ -436,7 +436,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="6. Apakah sistem market resto ini sudah cukup baik ? "
+                android:text="6. Apakah sistem aplikasi ini sudah cukup baik ? "
                 android:textColor="@color/Tex"
                 android:textStyle="bold"
                 />
